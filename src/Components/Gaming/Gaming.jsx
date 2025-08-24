@@ -19,7 +19,7 @@ function Gaming() {
       y:0
     }}
     transition={{
-      delay: 1.5,
+      delay: 1,
       duration: 1
     }}
     className='w-[80%] m-auto'>
@@ -46,7 +46,7 @@ function Gaming() {
       y:0
     }}
     transition={{
-      delay: 2,
+      delay: 1.5,
       duration: 1
     }}
       className='w-[80%] m-auto'>

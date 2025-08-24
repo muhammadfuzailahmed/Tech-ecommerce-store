@@ -4,10 +4,23 @@ import { useState } from 'react';
 import Professionalcollection from '../Data/Professionalcollection';
 import {motion} from 'motion/react'
 import { toast } from 'react-toastify';
+// import Cartcard from '../Card/Cartcard';
+import Cart from '../Cart/Cart';
 
 function Professionalproductid() {
+    const [counter, setCounter] = useState(1)
+    let {newproductId} = useParams();
+    let id = Number(newproductId);
+    let product = Professionalcollection.find(p => p.id === id);
+    if(!product) return <h2>Element not found</h2>
       const AddToCart = () => {
-        toast.success("Added to cart successfully!")
+        toast.success("Added to cart successfully!");
+        <Cart 
+        id={product.id}
+        img={product.img}
+        title={product.title}
+        price={product.price}
+        />
       }
       let Decreade = () => {
         if(counter > 1){
@@ -17,11 +30,6 @@ function Professionalproductid() {
       let Increase = () => {
         setCounter(counter + 1)
       }
-      const [counter, setCounter] = useState(1)
-    let {newproductId} = useParams();
-    let id = Number(newproductId);
-    let product = Professionalcollection.find(p => p.id === id);
-    if(!product) return <h2>Element not found</h2>
   return (
      <motion.div 
     initial={{

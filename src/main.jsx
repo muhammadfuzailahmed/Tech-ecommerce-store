@@ -10,6 +10,9 @@ import Gamingproductid from './Components/Productid/Gamingproductid.jsx'
 import { ToastContainer } from 'react-toastify';
 import Product from './Components/Product/Product.jsx'
 import Professionalproductid from './Components/Productid/Professionalproductid.jsx'
+import About from './Components/About/About.jsx'
+import Contact from './Components/Contact/Contact.jsx'
+import Cart from './Components/Cart/Cart.jsx'
 
 const route = createBrowserRouter([
   {
@@ -30,11 +33,11 @@ const route = createBrowserRouter([
       },
       {
         path: "about",
-        element: <Gaming />
+        element: <About />
       },
       {
         path: "contact",
-        element: <Gaming />
+        element: <Contact />
       },
       {
         path: "/gamingaccessories/:productId",
@@ -43,6 +46,10 @@ const route = createBrowserRouter([
       {
         path: "/professionalaccessories/:newproductId",
         element: <Professionalproductid />
+      },
+      {
+        path: "cart",
+        element: <Cart />
       },
     ]
   }

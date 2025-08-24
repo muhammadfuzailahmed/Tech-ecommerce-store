@@ -32,7 +32,11 @@ function Header() {
             </ul>
         </div>
         <div>
-            <button className='p-2 font-bold border-2 border-orange-700 rounded-lg fony-bold cursor-pointer transition-all hover:text-orange-700'>Cart</button>
+            <Link to="/cart">
+            <button className='p-2 font-bold border-2 border-orange-700 rounded-lg fony-bold cursor-pointer transition-all hover:text-orange-700'>
+                Cart
+            </button>
+            </Link>
         </div>
     </motion.div>
     <motion.hr 

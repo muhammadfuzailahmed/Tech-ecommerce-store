@@ -8,6 +8,7 @@ import Professionalcollection from '../Data/Professionalcollection.jsx'
 
 function Home() {
   let GamingCollectionFirstFour = Gamingcollection.slice(0,4);
+  let ProfessionalCollectionFirstFour = Professionalcollection.slice(0,4);
   return (
     <>
     <div className='flex items-center justify-between pl-34 pr-34 pb-16 mt-36'>
@@ -120,7 +121,7 @@ function Home() {
       </div>
 
       <div className='w-[80%] m-auto'>
-        <Row item={Professionalcollection.map((item) => (
+        <Row item={ProfessionalCollectionFirstFour.map((item) => (
           <Card 
           key={item.id}
           id={item.id}

@@ -1,11 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {motion} from 'motion/react'
 import Contactimg from '../../assets/Contactimg.jpg'
+ import {toast} from 'react-toastify';
 
 function Contact() {
   function handleSubmit() {
     let name = document.querySelector(".name");
     let age = document.querySelector(".age");
+    let maleCheckbox = document.querySelector(".male-checkbox");
+    let femaleCheckbox = document.querySelector(".female-checkbox");
+    let message = document.querySelector(".message");
+    if(name.value === "" || age.value === "" || message === "") {
+      toast.error("Fill all the required fields");
+    }else if(age.value < 1 || age.value > 70) {
+      toast.error("Invalid age")
+    }
+    else if(maleCheckbox.checked && femaleCheckbox.checked) {
+      toast.error("Select any one value under gender")
+    }else{
+      toast.success("Form submitted successfully!")
+      name.value = "";
+      age.value = "";
+      message.value = "";
+      maleCheckbox.checked = false;
+      femaleCheckbox.checked = false;
+    }
+
   }
   return (
     <motion.div
@@ -29,12 +49,20 @@ function Contact() {
             </div>
             <div className='mt-6 mb-6'>
                 <label className='' htmlFor="">Gender: </label>
-                <input className='border-2 ml-2 border-black p-1 rounded-sm' type="radio" placeholder='Male' />
+                <input 
+                className='border-2 ml-2 border-black p-1 rounded-sm male-checkbox' 
+                type="radio"
+                placeholder='Male'
+                />
                 <label className='text-black ml-2' htmlFor="gender">Male</label>
-                <input className='border-2 ml-4 border-black p-1 rounded-sm' type="radio" placeholder='Female' />
+                <input 
+                className='border-2 ml-4 border-black p-1 rounded-sm female-checkbox'
+                type="radio"
+                placeholder='Female' 
+                />
                 <label className='text-black ml-2' htmlFor="gender">Female</label>
             </div>
-                <textarea className='border-2 border-black p-1 text-black rounded-sm' placeholder='Tell us about yourself' cols={40} rows={6}></textarea>
+                <textarea className='border-2 border-black p-1 text-black rounded-sm message' placeholder='Tell us about yourself' cols={40} rows={6}></textarea>
                 <div className="btn mt-4">
                     <motion.button
                     onClick={handleSubmit}

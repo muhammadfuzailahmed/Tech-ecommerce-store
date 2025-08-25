@@ -15,12 +15,7 @@ function Professionalproductid() {
     if(!product) return <h2>Element not found</h2>
       const AddToCart = () => {
         toast.success("Added to cart successfully!");
-        <Cart 
-        id={product.id}
-        img={product.img}
-        title={product.title}
-        price={product.price}
-        />
+        
       }
       let Decreade = () => {
         if(counter > 1){

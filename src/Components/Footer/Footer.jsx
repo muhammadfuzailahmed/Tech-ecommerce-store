@@ -33,8 +33,8 @@ function Footer() {
                 </ul>
             </div>
             <div className='md:text-left text-center md:mt-0 mt-3'>
-                <p className=' uppercase cursor-pointer transition-all hover:text-orange-700'>infous12@gmail.com</p>
-                <p className=' uppercase cursor-pointer transition-all hover:text-orange-700'>021-34256778</p>
+                <p className='cursor-pointer transition-all hover:text-orange-700'>infous12@gmail.com</p>
+                <p className='uppercase cursor-pointer transition-all hover:text-orange-700'>021-34256778</p>
             </div>
         </div>
         <div className='text-center mt-4 pb-1.5 font-bold'>Techify 2025 &#169; | All Rights Reserved</div>

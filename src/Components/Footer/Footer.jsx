@@ -17,14 +17,14 @@ function Footer() {
         delay: 0.8,
         duration: 1
     }}
-    className='pl-34 pr-34 mt-20'>
+    className='md:px-34 mt-20'>
         <hr className='border-2 border-orange-700 mb-6'/>
-        <div className='flex items-center justify-around'>
+        <div className='md:flex items-center justify-around'>
             <div className="logo">
-                <h1 className='font-mono text-4xl font-bold'>Techify</h1>
+                <h1 className='font-mono text-4xl font-bold md:ml-0 ml-3'>Techify</h1>
             </div>
             <div>
-                <ul>
+                <ul className='md:text-left text-center'>
                     <li><NavLink to="/" className={({isActive}) => `list-none font-[700] uppercase cursor-pointer transition-all hover:text-orange-700 ${isActive ? "text-orange-700" : "text-black"}`}>Home</NavLink></li>
                     <li><NavLink to="/gamingaccessories" className={({isActive}) => `list-none font-[700] uppercase cursor-pointer transition-all hover:text-orange-700 ${isActive ? "text-orange-700" : "text-black"}`}>Gaming</NavLink></li>
                     <li><NavLink to="/professionalaccessories" className={({isActive}) => `list-none font-[700] uppercase cursor-pointer transition-all hover:text-orange-700 ${isActive ? "text-orange-700" : "text-black"}`}>Professional</NavLink></li>
@@ -32,7 +32,7 @@ function Footer() {
                     <li><NavLink to="/contact" className={({isActive}) => `list-none uppercase cursor-pointer font-[700] transition-all hover:text-orange-700 ${isActive ? "text-orange-700" : "text-black"}`}>Contact</NavLink></li>
                 </ul>
             </div>
-            <div>
+            <div className='md:text-left text-center md:mt-0 mt-3'>
                 <p className=' uppercase cursor-pointer transition-all hover:text-orange-700'>infous12@gmail.com</p>
                 <p className=' uppercase cursor-pointer transition-all hover:text-orange-700'>021-34256778</p>
             </div>

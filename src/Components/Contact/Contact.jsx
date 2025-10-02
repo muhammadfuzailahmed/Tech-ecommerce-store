@@ -41,11 +41,11 @@ function Contact() {
       delay: 1,
       duration: 1
     }}
-    className='flex items-center justify-between'>
-        <div className='pt-32 pl-40 pr-40'>
+    className='md:flex items-center justify-between'>
+        <div className='mt-20 md:px-40 md:w-auto w-[90vw] m-auto'>
             <div>
                 <input className='border-2 border-black p-1 rounded-sm w-60 name' type="text" placeholder='Enter name'/>
-                <input className='border-2 border-black p-1 rounded-sm w-60 ml-2 age' type="number" min={1} max={70} placeholder='Enter age'/>
+                <input className='border-2 border-black p-1 rounded-sm w-60 md:ml-2 age md:mt-0 mt-5' type="number" min={1} max={70} placeholder='Enter age'/>
             </div>
             <div className='mt-6 mb-6'>
                 <label className='' htmlFor="">Gender: </label>
@@ -76,7 +76,7 @@ function Contact() {
                 </div>
         </div>
             <div>
-                <img className='w-[500px] rounded-md mt-32 mr-36' src={Contactimg} alt="contact" />
+                <img className='md:w-[500px] w-[95vw] m-auto rounded-md md:mt-32 mt-5 md:mr-36' src={Contactimg} alt="contact" />
             </div>
     </motion.div>
   )

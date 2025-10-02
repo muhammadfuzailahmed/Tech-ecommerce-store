@@ -22,7 +22,7 @@ function Gaming() {
       delay: 1,
       duration: 1
     }}
-    className='w-[80%] m-auto'>
+    className=''>
         <Row item={GamingCollectionFirstFour.map((item) => (
           <Card 
           key={item.id}
@@ -49,7 +49,7 @@ function Gaming() {
       delay: 1.5,
       duration: 1
     }}
-      className='w-[80%] m-auto'>
+      className=''>
         <Row item={GamingCollectionLastFour.map((item) => (
           <Card 
           key={item.id}

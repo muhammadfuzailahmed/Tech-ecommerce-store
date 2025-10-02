@@ -11,7 +11,7 @@ function Home() {
   let ProfessionalCollectionFirstFour = Professionalcollection.slice(0,4);
   return (
     <>
-    <div className='flex items-center justify-between pl-34 pr-34 pb-16 mt-36'>
+    <div className='md:flex items-center justify-between md:px-34 md:pb-16 md:mt-36 mt-20'>
       <motion.div
       initial={{
         opacity: 0,
@@ -26,8 +26,9 @@ function Home() {
         duration: 1
       }}
       >
-        <p className='font-bold text-2xl uppercase'>New arrivals only!</p>
-        <h1 className='mt-4 text-6xl font-bold w-[30vw] mb-4 capitalize'>New collection for every one</h1>
+        <p className='font-bold text-2xl uppercase md:w-auto w-[90vw] m-auto'>New arrivals only!</p>
+        <h1 className='mt-4 md:text-6xl text-5xl font-bold md:w-[30vw] w-[90vw] m-auto mb-4 capitalize'>New collection for every one</h1>
+        <div className='md:w-auto w-[90vw] m-auto mb-5'>
         <motion.button 
         whileHover={{
           scale: 1.05,
@@ -36,6 +37,7 @@ function Home() {
           duration: 0.4
         }}
         className='capitalize p-3 border-2 border-orange-700 rounded-lg font-bold cursor-pointer text-orange-700'>Latest collection</motion.button>
+        </div>
       </motion.div>
       <motion.div
       initial={{
@@ -51,7 +53,7 @@ function Home() {
         duration: 1
       }}
       >
-        <img className='w-[30vw] rounded-md' src="https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg" alt="" />
+        <img className='md:w-[30vw] w-[90vw] m-auto rounded-md' src="https://cdn.pixabay.com/photo/2019/07/14/16/27/pen-4337521_1280.jpg" alt="" />
       </motion.div>    
     </div>
 
@@ -86,7 +88,7 @@ function Home() {
       className='border-3 rounded-lg border-orange-700 w-[25vw]'/>
       </div>
 
-      <div className='w-[80%] m-auto'>
+      <div className=''>
         <Row item={GamingCollectionFirstFour.map((item) => (
           <Card 
           key={item.id}
@@ -106,7 +108,7 @@ function Home() {
         <hr className='border-3 rounded-lg border-orange-700 w-[20vw]'/>      
         </div>
 
-        <div className='w-[80%] m-auto'>
+        <div className=''>
         <Row item={Newcollection.map((item) => (
           <Card 
           key={item.id}
@@ -120,7 +122,7 @@ function Home() {
         } />
       </div>
 
-      <div className='w-[80%] m-auto'>
+      <div className=''>
         <Row item={ProfessionalCollectionFirstFour.map((item) => (
           <Card 
           key={item.id}

@@ -20,7 +20,7 @@ function Productcard({id, img, title, description, price}) {
     transition={{
         duration: 0.5
     }}
-    className='ml-4 border-[3px] border-orange-700 rounded-lg w-[250px]'>
+    className='border-[3px] border-orange-700 rounded-lg md:w-[250px]'>
         <Link to={`/professionalaccessories/${id}`}>
         <img className='w-[100%] rounded-lg mb-3' src={img} alt="src" />
         <div className='pl-2 pr-2'>
@@ -33,4 +33,4 @@ function Productcard({id, img, title, description, price}) {
   )
 }
 
-export default Productcard
+export default Productcard  

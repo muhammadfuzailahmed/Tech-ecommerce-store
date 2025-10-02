@@ -22,7 +22,7 @@ function Product() {
       delay: 1,
       duration: 1
     }}
-    className='w-[80%] m-auto'>
+    className=''>
         <Row item={ProfessionalCollectionFirstFour.map((item) => (
           <Productcard 
           key={item.id}
@@ -49,7 +49,7 @@ function Product() {
       delay: 1.5,
       duration: 1
     }}
-      className='w-[80%] m-auto'>
+      className=''>
         <Row item={ProfessionalCollectionLastFour.map((item) => (
           <Productcard 
           key={item.id}

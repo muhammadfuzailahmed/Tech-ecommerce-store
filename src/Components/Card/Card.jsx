@@ -20,9 +20,9 @@ function Card({id, img, title, description, price}) {
     transition={{
         duration: 0.5
     }}
-    className='ml-4 border-[3px] border-orange-700 rounded-lg w-[250px]'>
+    className='border-[3px] border-orange-700 rounded-lg md:w-[250px]'>
         <Link to={`/gamingaccessories/${id}`}>
-        <img className='w-[100%] rounded-lg mb-3' src={img} alt="src" />
+        <img className='rounded-lg mb-3 w-[100%]' src={img} alt="src" />
         <div className='pl-2 pr-2'>
         <h2 className='mb-4 font-[700] capitalize'>{title}</h2>
         <p className='mb-4'>{description}</p>

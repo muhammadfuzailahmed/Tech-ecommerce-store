@@ -22,7 +22,7 @@ function Gaming() {
       delay: 1,
       duration: 1
     }}
-    className=''>
+    className='md:pt-0 pt-20'>
         <Row item={GamingCollectionFirstFour.map((item) => (
           <Card 
           key={item.id}

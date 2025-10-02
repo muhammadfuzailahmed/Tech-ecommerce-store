@@ -22,7 +22,7 @@ function Product() {
       delay: 1,
       duration: 1
     }}
-    className=''>
+    className='md:pt-0 pt-20'>
         <Row item={ProfessionalCollectionFirstFour.map((item) => (
           <Productcard 
           key={item.id}

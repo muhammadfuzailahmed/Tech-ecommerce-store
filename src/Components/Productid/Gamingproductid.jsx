@@ -36,15 +36,15 @@ function Gamingproductid() {
       delay: 0.5,
       duration: 0.8
     }}
-    className='flex justify-center pl-52 pr-52 mt-20 mb-20'>
+    className='flex justify-center md:px-52 px-2 mt-20 mb-20'>
       <div>
-        <motion.img whileHover={{scale: 1.2}} transition={{duration: 0.5}} className='w-[15vw] cursor-pointer p-1.5 rounded-lg border-3 border-orange-700' src={product.img} alt="" />
+        <motion.img whileHover={{scale: 1.2}} transition={{duration: 0.5}} className='md:w-[15vw] w-[100vw] cursor-pointer p-1.5 rounded-lg border-3 border-orange-700' src={product.img} alt="" />
       </div>
-      <div className='ml-20'>
+      <div className='md:ml-20 ml-5'>
         <h3 className='font-bold text-2xl capitalize'>{product.title}</h3>
-        <p className='mt-3'>{product.description}</p>
-        <p className='font-bold text-[22px] mt-3'>Rs. {product.price}</p>
-        <p className='mt-3'><button
+        <p className='md:mt-3'>{product.description}</p>
+        <p className='font-bold text-[22px] md:mt-3'>Rs. {product.price}</p>
+        {/* <p className='md:mt-3'><button
         onClick={Decreade}
         className='border-2 cursor-pointer border-black w-[20px] h-[30px] font-bold'>-</button><span className='w-[20px] ml-0.5 mr-0.5 h-[30px] font-bold'>{counter}</span><button 
         onClick={Increase}
@@ -57,7 +57,7 @@ function Gamingproductid() {
         transition={{
           duration: 0.3
         }}
-        className='p-2 border-3 border-orange-700 rounded-lg mt-4 capitalize text-orange-700 cursor-pointer font-bold hover:bg-orange-700 hover:text-white '>Add to cart</motion.button>
+        className='p-2 border-3 border-orange-700 rounded-lg md:mt-4 mt-2 capitalize text-orange-700 cursor-pointer font-bold hover:bg-orange-700 hover:text-white '>Add to cart</motion.button> */}
       </div>
     </motion.div>
   )

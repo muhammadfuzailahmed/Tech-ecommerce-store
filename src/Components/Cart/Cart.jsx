@@ -5,9 +5,7 @@ import Cartcard from '../Card/Cartcard'
 function Cart({id, title, price, img}) {
   return (
      <>
-      <h3>Title: {title}</h3>
-      <div><img className='w-[20vw]' src={img} alt="" /></div>
-      <h3>Price: {price}</h3>
+      
      </>
   )
 }

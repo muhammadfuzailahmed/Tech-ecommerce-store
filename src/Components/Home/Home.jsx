@@ -5,13 +5,14 @@ import Card from '../Card/Card'
 import Gamingcollection from '../Data/Gamingcollection.jsx'
 import Newcollection from '../Data/Newcollection.jsx'
 import Professionalcollection from '../Data/Professionalcollection.jsx'
+import Productcard from '../Card/Professionalproductcard.jsx'
 
 function Home() {
   let GamingCollectionFirstFour = Gamingcollection.slice(0,4);
   let ProfessionalCollectionFirstFour = Professionalcollection.slice(0,4);
   return (
     <>
-    <div className='md:flex items-center justify-between md:px-34 md:pb-16 md:mt-36 mt-20'>
+    <div className='md:flex items-center justify-between md:px-34 md:pb-16 md:mt-36 mt-28'>
       <motion.div
       initial={{
         opacity: 0,
@@ -108,23 +109,9 @@ function Home() {
         <hr className='border-3 rounded-lg border-orange-700 w-[20vw]'/>      
         </div>
 
-        <div className=''>
-        <Row item={Newcollection.map((item) => (
-          <Card 
-          key={item.id}
-          id={item.id}
-          img={item.img}
-          title={item.title}
-          description={item.description}
-          price={item.price}
-          />
-        ))
-        } />
-      </div>
-
       <div className=''>
         <Row item={ProfessionalCollectionFirstFour.map((item) => (
-          <Card 
+          <Productcard 
           key={item.id}
           id={item.id}
           img={item.img}

@@ -1,12 +1,38 @@
-# React + Vite
+# Tech E-commerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Tech E-commerce Store project. This is a React-based front-end e-commerce platform offering a wide selection of gaming and professional tech accessories. Whether you're a passionate gamer looking for the latest gaming products, or a professional in need of ergonomic desk accessories, our store has something for everyone.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Product Catalog:
 
-## Expanding the ESLint configuration
+- Gaming Accessories: Keyboards, mice, headphones, controllers, and more, all with RGB lighting.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Professional Tech Products: Laptops bags, desks, charging cables, and more for a productive workspace.
+
+- Product Pages: Each product has detailed descriptions, images, and prices for a better shopping experience.
+
+- Add to Cart: Cart functionality is currently in progress.
+
+- Toast Notifications: Displays confirmation when an item is successfully added to the cart.
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/muhammadfuzailahmed/Tech-ecommerce-store
+
+
+## Cart Functionality
+
+The cart data doesn't persist upon page refresh at the moment. This functionality is being actively worked on.
+
+## Technologies Used
+
+- React (Frontend framework)
+
+- React Router (For navigation between different pages)
+
+- Toastify (For toast notifications on add-to-cart action)
+
+- Tailwind CSS (For styling)
